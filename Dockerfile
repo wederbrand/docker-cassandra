@@ -7,8 +7,8 @@ MAINTAINER Andreas Wederbrand andreas@wederbrand.se
 
 RUN mkdir -p /opt
 WORKDIR /opt
-RUN curl -L http://downloads.datastax.com/community/dsc-cassandra-2.1.3-bin.tar.gz | tar xz
-RUN ln -s dsc-cassandra-2.1.3 cassandra
+RUN curl -L http://downloads.datastax.com/community/dsc-cassandra-2.1.2-bin.tar.gz | tar xz
+RUN ln -s dsc-cassandra-2.1.2 cassandra
 WORKDIR cassandra
 # RUN rm -rf data/system/*
 RUN mkdir -p data/data
