@@ -9,7 +9,11 @@ RUN mkdir -p /opt
 WORKDIR /opt
 RUN curl -L http://downloads.datastax.com/community/dsc-cassandra-2.1.3-bin.tar.gz | tar xz
 RUN ln -s dsc-cassandra-2.1.3 cassandra
-RUN rm -rf cassandra/data/system/*
+WORKDIR cassandra
+# RUN rm -rf data/system/*
+RUN mkdir -p data/data
+RUN mkdir -p data/commitlog
+RUN mkdir -p data/saved_caches
 
 RUN rm -f /etc/security/limits.d/cassandra.conf
 
