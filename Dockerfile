@@ -2,7 +2,7 @@
 #
 # VERSION               1.0
 
-FROM wederbrand/java7
+FROM wederbrand/java:java7
 MAINTAINER Andreas Wederbrand andreas@wederbrand.se
 
 RUN mkdir -p /opt

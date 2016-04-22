@@ -35,7 +35,7 @@ if [[ $DC && $RACK ]]; then
   echo "rack=$RACK" >> $CONFIG/cassandra-rackdc.properties
 elif [[ $DC ]]; then
   echo "dc=$DC" > $CONFIG/cassandra-rackdc.properties
-  echo "rack=r1" >> $CONFIG/cassandra-rackdc.properties
+  echo "rack=RAC1" >> $CONFIG/cassandra-rackdc.properties
 fi
 
 # Start process
